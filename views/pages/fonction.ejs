@@ -1,0 +1,15 @@
+<script>
+  function moinsdetrente() {
+    //Récupération des 'p'
+    let paragraphe = document.getElementsByTagName('p');
+    //On boucle sur tous les 'p'
+    for (let i = 0; i < paragraphe.length; i++) {
+    // Vérif du contenu de 'p' (pour voir si il fait + que 30 caractères)
+      if (paragraphe[i].textContent.length > 30) {
+    //Raccourcit en gardant que les 30 premiers caractères et ajt '...'
+        paragraphe[i].textContent = paragraphe[i].textContent.slice(0, 30) + '...';
+      }
+    }
+  }
+  moinsdetrente();
+</script>
